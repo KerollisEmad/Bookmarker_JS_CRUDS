@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmarker</title>
+    <meta name="description" content="best websit Bookmarker">
+    <link rel="icon" href="./assets/images/bookmark.png">
+
+    <!-- ~ Font awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- ~ Bootstrap Style sheet -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- ~ main Style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ~ media Style sheet -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <!-- ~ google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="position-relative">
+
+        <section class="py-5">
+            <div class="container">
+                <h1 class=" text-center py-2 mb-5">Bookmarker</h1>
+
+                <div class="content p-3 py-4">
+                    <h2 class=" text-center my-3">
+                        <i class="fa-solid fa-bookmark"></i>
+                        Bookmark your favorite sites
+                        <i class="fa-solid fa-bookmark"></i>
+                    </h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label fw-semibold "><i
+                                    class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                            <input type="text" class="form-control" id="nameInput" autocomplete="off"
+                                placeholder="Bookmark Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlInput" class="form-label fw-semibold"><i
+                                    class="fa-solid fa-link pe-2"></i>Site URL</label>
+                            <input type="text" class="form-control" id="urlInput" autocomplete="off"
+                                placeholder="Website URL">
+                        </div>
+
+
+
+                        <div class="text-center">
+                            <button class="btn btn-submit px-5" id="Submit" type="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card mt-4">
+                    <table class="text-center bg-light">
+                        <thead>
+                            <tr>
+                                <th class="p-2"> Index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body">
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="error">
+
+                </div>
+
+            </div>
+        </section>
+
+        <div
+            class="errorOverlay d-none h-100 w-100 position-absolute start-0 top-0 bottom-0 d-flex justify-content-center align-items-center">
+            <div class="content bg-white p-4 rounded-2 shadow-lg position-relative">
+                <div class="circles mt-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <i class="fa-solid fa-xmark close fs-3 closeBtn "></i>
+                <p class="mt-4 mb-2">Site Name or Url is not valid, Please follow the rules below :</p>
+                <div class="rules">
+                    <div class="rule">
+                        <i class="fa-regular fa-circle-right p-2"></i>
+                        Site name must contain at least 3 characters
+                    </div>
+                    <div class="rule mb-0">
+                        <i class="fa-regular fa-circle-right p-2"></i>
+                        Site URL must be a valid one
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
