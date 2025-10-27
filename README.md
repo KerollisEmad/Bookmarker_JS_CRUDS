@@ -43,3 +43,4 @@ It allows users to **add**, **view**, **update**, and **delete** bookmarks easil
 ---
 
 <p align="center">✨ Designed & Developed by <b>Kerollis Emad</b> ✨</p>
+
